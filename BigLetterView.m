@@ -8,6 +8,11 @@
 
 #import "BigLetterView.h"
 
+@interface BigLetterView()
+-(void)writeToPasteboard:(NSPasteboard *)pb;
+-(BOOL)readFromPasteboard:(NSPasteboard *)pb;
+@end
+
 
 @implementation BigLetterView
 
@@ -146,6 +151,40 @@
 	}
 }
 
+-(IBAction)cut:(id)sender {
+	[self copy:sender];
+	[self setString:@""];
+}
+
+-(IBAction)copy:(id)sender {
+	NSPasteboard *pb = [NSPasteboard generalPasteboard];
+	[self writeToPasteboard:pb];
+}
+
+-(IBAction)paste:(id)sender {
+	NSPasteboard *pb = [NSPasteboard generalPasteboard];
+	if (![self readFromPasteboard:pb]) {
+		NSBeep();
+	}
+}
+
+-(void)writeToPasteboard:(NSPasteboard *)pb {
+	[pb declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:self];
+	[pb setString:string forType:NSStringPboardType];
+}
+
+-(BOOL)readFromPasteboard:(NSPasteboard *)pb {
+	NSArray *types = [pb types];
+	if ([types containsObject:NSStringPboardType]) {
+		NSString *value = [pb stringForType:NSStringPboardType];
+		if ([value length] == 1) {
+			[self setString:value];
+			return YES;
+		}
+	}
+	return NO;
+}
+
 #pragma mark Accessors
 
 -(void)setBgColor:(NSColor *)c {
@@ -188,5 +227,6 @@
 -(BOOL)isItalic {
 	return isItalic;
 }
+
 
 @end

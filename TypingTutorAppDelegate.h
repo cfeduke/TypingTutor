@@ -7,9 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class BigLetterView;
 
 @interface TypingTutorAppDelegate : NSObject <NSApplicationDelegate> {
     NSWindow *window;
+	IBOutlet BigLetterView *bigLetterView;
 }
 
 @property (assign) IBOutlet NSWindow *window;

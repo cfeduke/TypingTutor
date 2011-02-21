@@ -12,9 +12,18 @@
 @interface BigLetterView : NSView {
 	NSColor *bgColor;
 	NSString *string;
+	NSMutableDictionary *attributes;
+	BOOL isBold;
+	BOOL isItalic;
 }
 
 @property (retain, readwrite) NSColor *bgColor;
 @property (copy, readwrite) NSString *string;
+@property (readwrite) BOOL isBold;
+@property (readwrite) BOOL isItalic;
+
+-(void)drawStringCenteredIn:(NSRect)r;
+-(void)prepareAttributes;
+-(IBAction)savePDF:(id)sender;
 
 @end

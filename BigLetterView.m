@@ -7,6 +7,7 @@
 //
 
 #import "BigLetterView.h"
+#import "FirstLetter.h"
 
 @interface BigLetterView()
 -(void)writeToPasteboard:(NSPasteboard *)pb;
@@ -179,10 +180,8 @@
 	NSArray *types = [pb types];
 	if ([types containsObject:NSStringPboardType]) {
 		NSString *value = [pb stringForType:NSStringPboardType];
-		if ([value length] == 1) {
-			[self setString:value];
-			return YES;
-		}
+		[self setString:[value BNR_firstLetter]];
+		return YES;
 	}
 	return NO;
 }

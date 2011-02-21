@@ -10,6 +10,7 @@
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		256AC3DA0F4B6AC300CF3369 /* TypingTutorAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* TypingTutorAppDelegate.m */; };
 		8C90964C1312DCD30058B741 /* BigLetterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C90964B1312DCD30058B741 /* BigLetterView.m */; };
+		8C9096E013131A670058B741 /* FirstLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9096DF13131A670058B741 /* FirstLetter.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -28,6 +29,8 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8C90964A1312DCD30058B741 /* BigLetterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BigLetterView.h; sourceTree = "<group>"; };
 		8C90964B1312DCD30058B741 /* BigLetterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigLetterView.m; sourceTree = "<group>"; };
+		8C9096DE13131A670058B741 /* FirstLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLetter.h; sourceTree = "<group>"; };
+		8C9096DF13131A670058B741 /* FirstLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLetter.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TypingTutor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TypingTutor-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TypingTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypingTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -51,6 +54,8 @@
 				256AC3D90F4B6AC300CF3369 /* TypingTutorAppDelegate.m */,
 				8C90964A1312DCD30058B741 /* BigLetterView.h */,
 				8C90964B1312DCD30058B741 /* BigLetterView.m */,
+				8C9096DE13131A670058B741 /* FirstLetter.h */,
+				8C9096DF13131A670058B741 /* FirstLetter.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
 				256AC3DA0F4B6AC300CF3369 /* TypingTutorAppDelegate.m in Sources */,
 				8C90964C1312DCD30058B741 /* BigLetterView.m in Sources */,
+				8C9096E013131A670058B741 /* FirstLetter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

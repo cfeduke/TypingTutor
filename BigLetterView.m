@@ -169,7 +169,9 @@
 }
 
 -(void)writeToPasteboard:(NSPasteboard *)pb {
-	[pb declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:self];
+	[pb declareTypes:[NSArray arrayWithObjects:NSPDFPboardType,NSStringPboardType,nil] owner:self];
+	NSData *data = [self dataWithPDFInsideRect:[self bounds]];
+	[pb setData:data forType:NSPDFPboardType];
 	[pb setString:string forType:NSStringPboardType];
 }
 

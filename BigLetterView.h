@@ -15,6 +15,8 @@
 	NSMutableDictionary *attributes;
 	BOOL isBold;
 	BOOL isItalic;
+	NSEvent *mouseDownEvent;
+	BOOL isHighlighted;
 }
 
 @property (retain, readwrite) NSColor *bgColor;

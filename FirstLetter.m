@@ -16,7 +16,7 @@
 		return self;
 	}
 	
-	NSRange r = NSMakeRange(0, 1)
+	NSRange r = NSMakeRange(0, 1);
 	return [self substringWithRange:r];
 }
 

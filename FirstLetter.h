@@ -10,5 +10,5 @@
 
 
 @interface NSString (FirstLetter)
--(NString *)BNR_firstLetter;
+-(NSString *)BNR_firstLetter;
 @end

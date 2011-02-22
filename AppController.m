@@ -95,4 +95,9 @@
 	[NSApp endSheet:speedSheet];
 	[speedSheet orderOut:sender];
 }
+
+-(BOOL)control:(NSControl *)control didFailToFormatString:(NSString *)string errorDescription:(NSString *)error {
+	NSLog(@"AppController told that formatting %@ failed: %@", string, error);
+	return NO;
+}
 @end

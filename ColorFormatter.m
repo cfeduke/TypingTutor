@@ -90,4 +90,23 @@
 	return NO;
 }
 
+/*
+-(BOOL)isPartialStringValid:(NSString *)partialString newEditingString:(NSString **)newString errorDescription:(NSString **)error {
+	if ([partialString length] == 0) {
+		return YES;
+	}
+	
+	NSString *match = [self firstColorKeyForPartialString:partialString];
+	if (match) {
+		return YES;
+	} else {
+		if (error) {
+			*error = @"No such color";
+		}
+		
+		return NO;
+	}
+
+}
+*/
 @end

@@ -186,6 +186,10 @@
 	return NO;
 }
 
+-(NSDragOperation)draggingSourceOperationMaskForLocal:(BOOL)isLocal {
+	return NSDragOperationCopy;
+}
+
 #pragma mark Accessors
 
 -(void)setBgColor:(NSColor *)c {

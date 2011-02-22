@@ -109,4 +109,34 @@
 
 }
 */
+
+-(BOOL)isPartialStringValid:(NSString **)partial 
+	  proposedSelectedRange:(NSRangePointer)selPtr 
+			 originalString:(NSString *)origString 
+	  originalSelectedRange:(NSRange)origSel 
+		   errorDescription:(NSString **)error
+{
+	if ([*partial length] == 0) {
+		return YES;
+	}
+	
+	NSString *match = [self firstColorKeyForPartialString:*partial];
+	
+	if (!match) {
+		return NO;
+	}
+	
+	if (origSel.location == selPtr->location) {
+		return YES;
+	}
+	
+	if ([match length] != [*partial length]) {
+		selPtr->location = [*partial length];
+		selPtr->length = [match length] - selPtr->location;
+		*partial = match;
+		return NO;
+	}
+	
+	return YES;
+}
 @end

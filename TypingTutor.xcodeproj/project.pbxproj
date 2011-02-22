@@ -12,6 +12,7 @@
 		67F8C217131373BF004F832B /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 67F8C216131373BF004F832B /* AppController.m */; };
 		8C90964C1312DCD30058B741 /* BigLetterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C90964B1312DCD30058B741 /* BigLetterView.m */; };
 		8C9096E013131A670058B741 /* FirstLetter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9096DF13131A670058B741 /* FirstLetter.m */; };
+		8C9097111313E7450058B741 /* ColorFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C9097101313E7450058B741 /* ColorFormatter.m */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -34,6 +35,8 @@
 		8C90964B1312DCD30058B741 /* BigLetterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BigLetterView.m; sourceTree = "<group>"; };
 		8C9096DE13131A670058B741 /* FirstLetter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstLetter.h; sourceTree = "<group>"; };
 		8C9096DF13131A670058B741 /* FirstLetter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstLetter.m; sourceTree = "<group>"; };
+		8C90970F1313E7450058B741 /* ColorFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorFormatter.h; sourceTree = "<group>"; };
+		8C9097101313E7450058B741 /* ColorFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ColorFormatter.m; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* TypingTutor-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TypingTutor-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* TypingTutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TypingTutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -61,6 +64,8 @@
 				8C9096DF13131A670058B741 /* FirstLetter.m */,
 				67F8C215131373BF004F832B /* AppController.h */,
 				67F8C216131373BF004F832B /* AppController.m */,
+				8C90970F1313E7450058B741 /* ColorFormatter.h */,
+				8C9097101313E7450058B741 /* ColorFormatter.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -198,6 +203,7 @@
 				8C90964C1312DCD30058B741 /* BigLetterView.m in Sources */,
 				8C9096E013131A670058B741 /* FirstLetter.m in Sources */,
 				67F8C217131373BF004F832B /* AppController.m in Sources */,
+				8C9097111313E7450058B741 /* ColorFormatter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
